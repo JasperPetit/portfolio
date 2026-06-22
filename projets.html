@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasper PETIT — Projets</title>
+  <meta name="description" content="Projets personnels, professionnels et universitaires de Jasper PETIT." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       NAVBAR
+  ====================================================================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>Jasper <span>PETIT</span></h2>
+      </div>
+
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="parcours.html" class="nav-link">Parcours</a></li>
+        <li><a href="projets.html" class="nav-link active" aria-current="page">Projets</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <div class="nav-menu-mobile" id="mobileMenu" role="menu">
+      <a href="index.html" role="menuitem">Accueil</a>
+      <a href="parcours.html" role="menuitem">Parcours</a>
+      <a href="projets.html" class="active" role="menuitem">Projets</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="projects-section">
+      <div class="container">
+        <h1 class="section-title">Mes Projets</h1>
+        <p style="text-align: center; color: var(--text-secondary); margin-top: -1.5rem; margin-bottom: var(--space-lg); font-size: 0.95rem;">
+          Filtrez par technologie, compétence ou type pour explorer mes réalisations.
+        </p>
+
+        <!-- Contrôles : recherche + filtres -->
+        <div class="projects-controls" role="search">
+
+          <div class="search-wrapper">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="m21 21-4.35-4.35"/>
+            </svg>
+            <input
+              type="search"
+              id="searchInput"
+              class="search-input"
+              placeholder="Rechercher un projet, une technologie…"
+              aria-label="Rechercher un projet"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="filters-section" role="group" aria-label="Filtres des projets">
+
+            <div class="filters-group">
+              <span class="filters-label">Type</span>
+              <button class="filter-btn" data-filter-group="type" data-filter-value="Personnel">Personnel</button>
+              <button class="filter-btn" data-filter-group="type" data-filter-value="Professionnel">Professionnel</button>
+              <button class="filter-btn" data-filter-group="type" data-filter-value="Universitaire">Universitaire</button>
+            </div>
+
+            <div class="filters-group">
+              <span class="filters-label">Hard Skills</span>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="Python">Python</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="Java">Java</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="PHP">PHP</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="HTML">HTML</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="CSS">CSS</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="Javascript">Javascript</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="Docker">Docker</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="Cybersécurité">Cybersécurité</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="RAG">RAG</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="LLM">LLM</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="UML">UML</button>
+              <button class="filter-btn" data-filter-group="hard" data-filter-value="POO">POO</button>
+            </div>
+
+            <div class="filters-group">
+              <span class="filters-label">Soft Skills</span>
+              <button class="filter-btn" data-filter-group="soft" data-filter-value="Travail en équipe">Travail en équipe</button>
+              <button class="filter-btn" data-filter-group="soft" data-filter-value="Gestion de projet">Gestion de projet</button>
+              <button class="filter-btn" data-filter-group="soft" data-filter-value="Gestion des délais et des ressources">Délais &amp; Ressources</button>
+              <button class="filter-btn" data-filter-group="soft" data-filter-value="Communication">Communication</button>
+              <button class="filter-btn" data-filter-group="soft" data-filter-value="Esprit d'analyse">Esprit d'analyse</button>
+            </div>
+
+            <!--
+              Compétences du référentiel BUT Informatique. Le filtre conserve
+              la valeur officielle complète (data-filter-value) tout en
+              affichant un libellé court sur le bouton pour la lisibilité.
+            -->
+            <div class="filters-group">
+              <span class="filters-label">Compétences</span>
+              <button class="filter-btn" data-filter-group="comp"
+                      data-filter-value="Réaliser un développement d'application"
+                      title="Réaliser un développement d'application">Développement d'application</button>
+              <button class="filter-btn" data-filter-group="comp"
+                      data-filter-value="Optimiser des applications informatiques"
+                      title="Optimiser des applications informatiques">Optimisation d'applications</button>
+              <button class="filter-btn" data-filter-group="comp"
+                      data-filter-value="Administrer des systèmes informatiques communicants"
+                      title="Administrer des systèmes informatiques communicants">Administration systèmes</button>
+              <button class="filter-btn" data-filter-group="comp"
+                      data-filter-value="Gérer des données de l'information"
+                      title="Gérer des données de l'information">Gestion de données</button>
+              <button class="filter-btn" data-filter-group="comp"
+                      data-filter-value="Conduire un projet"
+                      title="Conduire un projet">Conduite de projet</button>
+              <button class="filter-btn" data-filter-group="comp"
+                      data-filter-value="Travailler dans une équipe informatique"
+                      title="Travailler dans une équipe informatique">Travail en équipe info.</button>
+            </div>
+
+            <div class="filters-group">
+              <button class="reset-btn" id="resetFilters" aria-label="Réinitialiser tous les filtres">✕ Tout effacer</button>
+            </div>
+
+          </div>
+        </div>
+
+        <p class="results-count" id="resultsCount" aria-live="polite">
+          Affichage de <strong id="countVisible">5</strong> projet(s) sur <strong>5</strong>
+        </p>
+
+        <div class="projects-grid" id="projectsGrid" role="list" aria-label="Liste des projets">
+          <!-- Les cartes sont injectées dynamiquement par script.js -->
+        </div>
+
+        <div class="no-results" id="noResults" role="status" aria-live="polite">
+          <p>Aucun projet ne correspond à votre recherche.</p>
+          <p style="margin-top: 8px; font-size: 0.85rem;">Essayez de modifier les filtres ou la recherche.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-links">
+        <a href="mailto:jasper.petit27@gmail.com">jasper.petit27@gmail.com</a>
+        <span aria-hidden="true">·</span>
+        <a href="tel:+33686864338">+33 6 86 86 43 38</a>
+      </div>
+      <p>© 2026 Jasper PETIT — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <!-- Modale projet -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Fermer la modale">✕</button>
+
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <span class="modal-type-badge" id="modalTypeBadge"></span>
+          <h2 class="modal-title" id="modalTitle"></h2>
+        </div>
+      </div>
+
+      <div class="modal-body" id="modalBody">
+        <img class="modal-img" id="modalImg" src="" alt="" />
+
+        <div>
+          <p class="modal-section-title">Description</p>
+          <p class="modal-description" id="modalDesc"></p>
+        </div>
+
+        <div>
+          <p class="modal-section-title">Technique — Hard Skills</p>
+          <div class="tag-list" id="modalHardTags"></div>
+        </div>
+
+        <div>
+          <p class="modal-section-title">Soft Skills</p>
+          <div class="tag-list" id="modalSoftTags"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasper PETIT — Portfolio</title>
+  <meta name="description" content="Portfolio de Jasper PETIT, étudiant en BUT Informatique 2ème année à l'Université Sorbonne Paris Nord." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       NAVBAR (commune aux 3 pages)
+       Au départ : barre blanche pleine largeur
+       Au scroll : se transforme en pilule centrée avec dégradé violet/bleu
+  ====================================================================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2>Jasper <span>PETIT</span></h2>
+      </div>
+
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Accueil</a></li>
+        <li><a href="parcours.html" class="nav-link">Parcours</a></li>
+        <li><a href="projets.html" class="nav-link">Projets</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <div class="nav-menu-mobile" id="mobileMenu" role="menu">
+      <a href="index.html" class="active" role="menuitem">Accueil</a>
+      <a href="parcours.html" role="menuitem">Parcours</a>
+      <a href="projets.html" role="menuitem">Projets</a>
+    </div>
+  </nav>
+
+  <!-- =================================================================
+       SECTION HERO — Plein écran : nom, photo, accroche
+       C'est tout ce qu'on voit à l'arrivée. Le reste est en-dessous.
+  ================================================================== -->
+  <section class="hero" id="accueil">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <h1>Bonjour, je suis <span class="highlight">Jasper PETIT</span></h1>
+          <h2>Étudiant en BUT Informatique</h2>
+          <p>
+            Actuellement en deuxième année de BUT Informatique à l'Université
+            Sorbonne Paris Nord, je suis à la recherche d'un stage de 8 à 9
+            semaines afin de développer mes compétences et appliquer mes
+            connaissances.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#profil" class="btn btn-primary">
+              Découvrir mon profil
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <polyline points="19 12 12 19 5 12"/>
+              </svg>
+            </a>
+            <a href="mailto:jasper.petit27@gmail.com" class="btn btn-secondary">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="profile.jpg" alt="Photo de profil de Jasper PETIT" class="profile-photo" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECTION PROFIL — Infos perso, formation
+  ================================================================== -->
+  <section id="profil" class="profile">
+    <div class="container">
+      <h2 class="section-title">Profil</h2>
+
+      <div class="profile-content">
+
+        <!-- Coordonnées -->
+        <div class="info-card">
+          <h3>Informations personnelles</h3>
+          <div class="info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Montmorency (95)</span>
+          </div>
+          <div class="info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <a href="mailto:jasper.petit27@gmail.com">jasper.petit27@gmail.com</a>
+          </div>
+          <div class="info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.37 2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.09-1.09a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a href="tel:+33686864338">+33 6 86 86 43 38</a>
+          </div>
+        </div>
+
+        <!-- Formation -->
+        <div class="info-card">
+          <h3>Formation</h3>
+
+          <div class="education-item">
+            <h4>Bachelor Universitaire de Technologie (BUT) Informatique</h4>
+            <p class="edu-meta"><strong>Université Sorbonne Paris Nord</strong> · Septembre 2024 — Aujourd'hui</p>
+            <ul>
+              <li>Apprentissage de multiples langages de programmation</li>
+              <li>Travail sur les différents aspects de la vie en entreprise et de l'entrepreneuriat</li>
+              <li>Réalisation de travaux seuls et en groupe</li>
+              <li>Présentations et soutenances orales</li>
+            </ul>
+            <span class="diploma-rank">🏆 3e de la promotion sur 120</span>
+          </div>
+
+          <div class="education-item">
+            <h4>Baccalauréat Général — Mention Assez Bien</h4>
+            <p class="edu-meta"><strong>Lycée Jean-Jacques Rousseau, Montmorency</strong> · 2021 — 2024</p>
+            <ul>
+              <li>NSI (Numérique et Sciences Informatiques) — 20/20 à l'épreuve pratique</li>
+              <li>Spécialités : Anglais, Mathématiques</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="info-card">
+          <h3>Certifications</h3>
+          <div class="certs-list">
+            <div class="cert-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                <path d="M19.5 7.5l-3.4 3.4M5.9 18.1l-3.4 3.4M19.5 16.5l-3.4-3.4M5.9 5.9L2.5 2.5"/>
+              </svg>
+              Certification Cambridge — Anglais
+            </div>
+            <div class="cert-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              TOEIC - Anglais
+            </div>
+            <div class="cert-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              Certification PIX
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECTION PROJETS PROFESSIONNELS — Recherche d'alternance & ambitions
+  ================================================================== -->
+  <section id="projets-pro">
+    <div class="container">
+      <h2 class="section-title">Projets Professionnels</h2>
+
+      <div class="career-card">
+        <!-- Bandeau "À la recherche" mis en avant -->
+        <div class="career-highlight">
+          <div class="career-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </div>
+          <div>
+            <p class="career-highlight-label">À la recherche</p>
+            <p class="career-highlight-text">
+              Pour l'année prochaine, je suis à la recherche d'un
+              <strong>contrat d'alternance</strong> pour l'année universitaire
+              <strong>2026-2027</strong>.
+            </p>
+          </div>
+        </div>
+
+        <p class="career-text">
+          Soucieux d'allier solide expertise technique et vision globale des
+          systèmes d'information, j'ai pour ambition de poursuivre mon cursus
+          en <strong>école d'ingénieur</strong> ou au sein d'un
+          <strong>Master spécialisé en Cybersécurité</strong>. À terme,
+          j'aspire à orienter ma carrière vers
+          <strong>l'ingénierie des infrastructures réseaux</strong> ou le
+          <strong>management d'équipe</strong>, deux domaines qui placent la
+          stratégie, la collaboration et la résolution de problèmes complexes
+          au cœur de leur activité.
+        </p>
+
+        <!-- CTA email vers contact -->
+        <a href="mailto:jasper.petit27@gmail.com" class="btn btn-primary career-cta">
+          Discutons d'une opportunité
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECTION COMPÉTENCES — Hard skills (Dev + Réseaux) + Soft Skills
+  ================================================================== -->
+  <section id="competences">
+    <div class="container">
+      <h2 class="section-title">Compétences</h2>
+
+      <div class="info-card">
+
+        <div class="skills-grid">
+
+          <!-- ---- Développement ---- -->
+          <div class="skill-category">
+            <h4>Développement</h4>
+            <div class="skill-tags">
+
+              <!--
+                Chaque .skill-tag a une variable CSS --pct utilisée par la
+                barre interne (.progress-bar) qui se remplit au survol.
+              -->
+              <span class="skill-tag" style="--pct: 80%;" tabindex="0">
+                Python
+                <span class="skill-progress">
+                  <span class="progress-label">Python</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">80%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 70%;" tabindex="0">
+                Java
+                <span class="skill-progress">
+                  <span class="progress-label">Java</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">70%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 70%;" tabindex="0">
+                Flask
+                <span class="skill-progress">
+                  <span class="progress-label">Flask</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">70%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 65%;" tabindex="0">
+                JavaScript
+                <span class="skill-progress">
+                  <span class="progress-label">JavaScript</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">65%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 50%;" tabindex="0">
+                HTML
+                <span class="skill-progress">
+                  <span class="progress-label">HTML</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">50%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 50%;" tabindex="0">
+                CSS
+                <span class="skill-progress">
+                  <span class="progress-label">CSS</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">50%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 50%;" tabindex="0">
+                PHP
+                <span class="skill-progress">
+                  <span class="progress-label">PHP</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">50%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 50%;" tabindex="0">
+                Spring Boot
+                <span class="skill-progress">
+                  <span class="progress-label">Spring Boot</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">50%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 30%;" tabindex="0">
+                AJAX
+                <span class="skill-progress">
+                  <span class="progress-label">AJAX</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">30%</span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <!-- ---- Réseaux & Systèmes ---- -->
+          <div class="skill-category">
+            <h4>Réseaux &amp; Systèmes</h4>
+            <div class="skill-tags">
+
+              <span class="skill-tag" style="--pct: 75%;" tabindex="0">
+                LLM &amp; RAG
+                <span class="skill-progress">
+                  <span class="progress-label">Architecture LLM &amp; RAG</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">75%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 70%;" tabindex="0">
+                Adressage IP
+                <span class="skill-progress">
+                  <span class="progress-label">Adressage IP</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">70%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 65%;" tabindex="0">
+                Docker
+                <span class="skill-progress">
+                  <span class="progress-label">Déploiement Docker</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">65%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 60%;" tabindex="0">
+                Linux / MacOS
+                <span class="skill-progress">
+                  <span class="progress-label">Environnement Linux / MacOS</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">60%</span>
+                </span>
+              </span>
+
+              <span class="skill-tag" style="--pct: 50%;" tabindex="0">
+                Cybersécurité
+                <span class="skill-progress">
+                  <span class="progress-label">Cybersécurité</span>
+                  <span class="progress-bar-container"><span class="progress-bar"></span></span>
+                  <span class="progress-percentage">50%</span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ---- Soft Skills — sous les compétences techniques ---- -->
+        <div class="soft-skills-wrap">
+          <h4>Soft Skills</h4>
+          <div class="tag-list">
+            <span class="simple-tag">Esprit d'analyse</span>
+            <span class="simple-tag">Travail en équipe</span>
+            <span class="simple-tag">Autonomie dans la gestion des tâches</span>
+            <span class="simple-tag">Planification &amp; répartition des tâches</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================
+       SECTION À PROPOS DE MOI — Qualités, Langues, Centres d'intérêts
+       (Les Soft Skills sont désormais avec les compétences techniques.)
+  ================================================================== -->
+  <section id="autres" class="profile">
+    <div class="container">
+      <h2 class="section-title">À propos de moi</h2>
+
+      <div class="profile-content">
+
+        <!-- Qualités -->
+        <div class="info-card">
+          <h3>Qualités</h3>
+          <div class="tag-list">
+            <span class="simple-tag green">Assiduité</span>
+            <span class="simple-tag green">Créativité</span>
+            <span class="simple-tag green">Adaptabilité</span>
+          </div>
+        </div>
+
+        <!-- Langues -->
+        <div class="info-card">
+          <h3>Langues</h3>
+          <div class="languages-list">
+            <div class="language-item">
+              <div class="language-flag">🇫🇷</div>
+              <div class="language-name">Français</div>
+              <div class="language-level">Langue maternelle</div>
+            </div>
+            <div class="language-item">
+              <div class="language-flag">🇬🇧</div>
+              <div class="language-name">Anglais</div>
+              <div class="language-level">C1 — Avancé</div>
+            </div>
+            <div class="language-item">
+              <div class="language-flag">🇪🇸</div>
+              <div class="language-name">Espagnol</div>
+              <div class="language-level">A2 — Intermédiaire</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Centres d'intérêts -->
+        <div class="info-card">
+          <h3>Centres d'intérêts</h3>
+          <div class="tag-list">
+            <span class="simple-tag orange">📖 Lecture</span>
+            <span class="simple-tag orange">🍳 Cuisine</span>
+            <span class="simple-tag orange">🎮 Jeux-vidéo</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       FOOTER
+  ====================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-links">
+        <a href="mailto:jasper.petit27@gmail.com" aria-label="Email">jasper.petit27@gmail.com</a>
+        <span aria-hidden="true">·</span>
+        <a href="tel:+33686864338" aria-label="Téléphone">+33 6 86 86 43 38</a>
+      </div>
+      <p>© 2026 Jasper PETIT — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
