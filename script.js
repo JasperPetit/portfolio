@@ -294,7 +294,7 @@ const projects = [
     id: 1,
     title: 'Gestion de Colis',
     type: 'Universitaire',
-    hardSkills: ['PHP', 'HTML', 'CSS', 'UML', 'POO', 'Déploiement Docker', 'Gestion de base de données'],
+    hardSkills: ['PHP', 'HTML', 'CSS', 'UML', 'POO', 'Déploiement Docker', 'Gestion de base de données','Git'],
     softSkills: ['Travail en équipe', 'Gestion de projet', 'Gestion des délais et des ressources'],
     competencies: [
       'Réaliser un développement d\'application',
@@ -306,14 +306,14 @@ const projects = [
     shortDesc:
       'Application web de suivi et de gestion de colis développée en équipe dans le cadre du BUT Informatique.',
     longDesc:
-      'Ce projet universitaire consistait à concevoir et développer une application web complète de gestion de colis. L\'équipe a pris en charge l\'intégralité de la chaîne : modélisation de la base de données relationnelle, développement back-end en PHP, intégration front-end HTML/CSS et déploiement de l\'ensemble via Docker. L\'application permet l\'enregistrement de colis, leur suivi en temps réel par statut, la gestion des destinataires et des transporteurs, ainsi que la génération de récapitulatifs. Le projet a été réalisé en méthode agile avec des itérations hebdomadaires. \n\n Ce projet m\'a permis de grandement developper mes competences en developpement backend, notament sur l\'architecture MVC. J\'ai également pu mobiliser les competences de gestion de projet et de collaboration dans une équipe informatique grace a maposition de chef d\'équipe.',
+      'Ce projet universitaire consistait à concevoir et développer une application web complète de gestion de colis. L\'équipe a pris en charge l\'intégralité de la chaîne : modélisation de la base de données relationnelle, développement back-end en PHP, intégration front-end HTML/CSS et déploiement de l\'ensemble via Docker. L\'application permet l\'enregistrement de colis, leur suivi en temps réel par statut, la gestion des destinataires et des transporteurs, ainsi que la génération de récapitulatifs. Le projet a été réalisé en méthode agile avec des itérations hebdomadaires. \n\n Ce projet m\'a permis de grandement développer mes compétences en développement back-end, notamment sur l\'architecture MVC. J\'ai également pu mobiliser les compétences de gestion de projet et de collaboration dans une équipe informatique grâce à ma position de chef d\'équipe.',
     image: 'images/colis.png',
   },
   {
     id: 2,
     title: 'Nuit de l\'Informatique 2025',
     type: 'Personnel',
-    hardSkills: ['HTML', 'CSS', 'Javascript'],
+    hardSkills: ['HTML', 'CSS', 'Javascript','Git'],
     softSkills: ['Travail en équipe', 'Gestion des délais et des ressources', 'Esprit d\'analyse'],
     competencies: [
       'Réaliser un développement d\'application',
@@ -323,14 +323,14 @@ const projects = [
     shortDesc:
       'Challenge de développement front-end intensif réalisé en une nuit lors de la Nuit de l\'Informatique 2025.',
     longDesc:
-      'La Nuit de l\'Informatique est un défi national durant lequel j\'ai du réaliser un site web en seulement 16h, accompagné d\'une équipe d\'étudiants. En  décembre 2025, j\'ai ainsi passer la nuit a developper une application web interactive entièrement en HTML, CSS et JavaScript Vanilla, sans framework. Le projet imposait des contraintes techniques strictes : code maintenable, interface responsive et expérience utilisateur soignée, tout en respectant des délais extrêmement serrés. \n\n Ce projet ,bien que ludique, m\'a appris beaucoup de choses sur le respects de délais et m\'a permis de me tester en travaillant sous préssion. J\'ai également pu developper mes competences en communication spontané car j\'ai travailler avec des personnes qui m\'était inconnu avant cette évelenement mais avec qui j\'ai pu garder contact.',
+      'La Nuit de l\'Informatique est un défi national durant lequel j\'ai dû réaliser un site web en seulement 16h, accompagné d\'une équipe d\'étudiants. En décembre 2025, j\'ai ainsi passé la nuit à développer une application web interactive entièrement en HTML, CSS et JavaScript Vanilla, sans framework. Le projet imposait des contraintes techniques strictes : code maintenable, interface responsive et expérience utilisateur soignée, tout en respectant des délais extrêmement serrés. \n\n Ce projet, bien que ludique, m\'a appris beaucoup de choses sur le respect des délais et m\'a permis de me tester en travaillant sous pression. J\'ai également pu développer mes compétences en communication spontanée car j\'ai travaillé avec des personnes qui m\'étaient inconnues avant cet événement mais avec qui j\'ai pu garder contact.',
     image: 'https://via.placeholder.com/600x300/2ecc71/ffffff?text=Nuit+de+l\'Informatique',
   },
   {
     id: 3,
     title: 'Développement d\'un Outil IA',
     type: 'Professionnel',
-    hardSkills: ['Python', 'Docker', 'Cybersécurité', 'RAG', 'LLM'],
+    hardSkills: ['Python', 'Docker', 'Cybersécurité', 'RAG', 'LLM','Git'],
     softSkills: ['Travail en équipe', 'Gestion des délais et des ressources'],
     competencies: [
       'Réaliser un développement d\'application',
@@ -343,7 +343,7 @@ const projects = [
       'Outil IA interne basé sur une architecture RAG avec LLMs locaux, dans un environnement sécurisé.',
     longDesc:
       'Dans le cadre de mon stage de 8 à 9 semaines chez Infodip, j\'ai développé un outil d\'intelligence artificielle destiné à un usage interne. La solution repose sur une architecture RAG (Retrieval-Augmented Generation) combinant un modèle LLM déployé localement pour garantir la confidentialité des données et un moteur de recherche sémantique. L\'ensemble de l\'infrastructure a été conteneurisé avec Docker. J\'ai également mis en place des mesures de cybersécurité adaptées : isolation réseau des conteneurs, chiffrement des communications internes et gestion des secrets.',
-    image: 'images/infodip.webp',
+    image: 'images/infodip-groupe-logo.png',
   },
   {
     id: 4,
@@ -364,35 +364,51 @@ const projects = [
   {
     id: 5,
     title: 'Jeu d\'Échecs en Java',
-    type: 'Personnel',
-    hardSkills: ['Java', 'POO', 'Algorithmes', 'Structures de données'],
+    type: 'Universitaire',
+    hardSkills: ['Java', 'POO', 'Algorithmes', 'Structures de données','Git'],
     softSkills: ['Esprit d\'analyse', 'Autonomie'],
     competencies: [
       'Réaliser un développement d\'application',
       'Optimiser des applications informatiques',
     ],
     shortDesc:
-      'Implémentation complète d\'un jeu d\'échecs en console et avec interface graphique Swing, développé en Java orienté objet.',
+      'Implémentation complète d\'un jeu d\'échecs en console développé en Java orienté objet.',
     longDesc:
-      'Ce projet personnel consiste en le développement d\'un jeu d\'échecs entièrement fonctionnel en Java. L\'architecture s\'appuie sur les principes de la programmation orientée objet : héritage pour modéliser les pièces, design pattern Strategy pour les règles de déplacement, et pattern Observer pour la synchronisation entre modèle et vue. La logique de jeu inclut la détection des échecs et échec-et-mat, le roque, la prise en passant et la promotion des pions. Ce projet m\'a permis d\'approfondir ma maîtrise de Java et des algorithmes de recherche appliqués à l\'IA.',
+      'Ce projet personnel visait à développer un jeu d\'échecs complet et fonctionnel sous la forme d\'une application logicielle en Java natif. L\'enjeu principal était de concevoir un système capable de gérer des règles métiers complexes, de valider des déplacements et de maintenir l\'état d\'une partie en temps réel. Pour y parvenir, mon camarade et moi avons commencé par une phase de modélisation UML approfondie afin de cartographier l\'architecture du logiciel, les héritages et les interactions entre les différentes pièces et le plateau. Cette démarche a fait appel à un fort esprit d\'analyse et à une grande autonomie dans la recherche de solutions. La difficulté principale a résidé dans l\'implémentation de règles spécifiques nécessitant d\'anticiper plusieurs états du jeu, comme le roque ou la détection des échecs et mats. L\'effort de modélisation réalisé en amont s\'est avéré salvateur et m\'a permis de gagner un temps précieux lors du développement, m\'aidant à améliorer considérablement ma maîtrise de la programmation orientée objet pour rendre mon code plus modulaire.',
     image: 'images/echec.webp',
   },
     {
-    id: 5,
+    id: 6,
     title: 'Trésor de banlieue',
-    type: 'Personnel',
+    type: 'Universitaire',
     hardSkills: ['Java', 'POO', 'Algorithmes', 'Structures de données'],
-    softSkills: ['Esprit d\'analyse', 'Autonomie'],
+    softSkills: ['Esprit d\'analyse', 'Travail en equipe','Gestion de projet'],
     competencies: [
       'Réaliser un développement d\'application',
       'Optimiser des applications informatiques',
     ],
     shortDesc:
-      'Implémentation complète d\'un jeu d\'échecs en console et avec interface graphique Swing, développé en Java orienté objet.',
+      'Création d\'un site vitrine pour une exposition d\'art urbain.',
     longDesc:
       'Ce projet personnel consiste en le développement d\'un jeu d\'échecs entièrement fonctionnel en Java. L\'architecture s\'appuie sur les principes de la programmation orientée objet : héritage pour modéliser les pièces, design pattern Strategy pour les règles de déplacement, et pattern Observer pour la synchronisation entre modèle et vue. La logique de jeu inclut la détection des échecs et échec-et-mat, le roque, la prise en passant et la promotion des pions. Ce projet m\'a permis d\'approfondir ma maîtrise de Java et des algorithmes de recherche appliqués à l\'IA.',
     image: 'images/tresor-de-banlieu.webp',
   },
+  {
+    id: 7,
+    title: 'Jeu de puissance 4',
+    type: 'Personnel',
+    hardSkills: ['Javascript','vue.js','HTML','CSS'],
+    softSkills: ['Esprit d\'analyse', 'Autonomie'],
+    competencies: [
+        'Gérer des données de l\'information'
+    ],
+    shortDesc:
+      'Écriture d\'un petit jeu de puissance 4 en utilisant Vue.js',
+    longDesc:
+      'J\'ai développé ce jeu de puissance 4 pour mettre en pratique Vue.js après l\'avoir abordé en cours. L\'interface repose sur des composants Vue, du HTML et du CSS. La principale difficulté a été de concevoir l\'algorithme de vérification des victoires, notamment pour détecter les alignements en diagonale après chaque jeton joué. J\'ai résolu le problème en modélisant la grille sous forme de tableau multidimensionnel et en exploitant le système de réactivité du framework. Ce projet m\'a permis de mieux comprendre le cycle de vie des composants Vue et de consolider ma logique sur les structures de données en JavaScript.',
+    image: 'images/puissance.png',
+  },
+  
 ];
 
 
